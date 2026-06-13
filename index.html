@@ -20,39 +20,31 @@
   body{background:var(--bg);color:var(--ink);font-family:var(--font);-webkit-font-smoothing:antialiased;overflow-x:hidden}
   ::selection{background:var(--pink);color:#fff}
   a{color:inherit;text-decoration:none}
-
   .label{font-weight:600;font-size:12px;letter-spacing:.22em;text-transform:uppercase}
   .label.pink{color:var(--pink)}
   .muted{color:var(--muted)}
-
   .wordmark{font-weight:900;letter-spacing:-.02em;text-transform:uppercase;display:inline-flex;align-items:flex-start;line-height:1}
   .wordmark sup{font-weight:700;font-size:.34em;letter-spacing:.02em;color:var(--pink);margin-left:.1em;margin-top:.18em}
-
   .hero{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:space-between;
     max-width:1180px;margin:0 auto;padding:30px 32px 28px;position:relative}
-
   /* top bar */
   .top{display:flex;align-items:center;justify-content:space-between}
   .top .wordmark{font-size:24px}
   .top .links{display:flex;gap:26px;align-items:center}
   .top .links a{font-weight:500;font-size:13px;letter-spacing:.04em}
   .top .links a:hover{color:var(--pink)}
-
   /* center */
   .center{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;flex:1;padding:40px 0;max-width:920px;margin:0 auto;width:100%}
   .eyebrow{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:30px;opacity:0;animation:fade .7s .05s forwards}
   .eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--pink)}
-
   h1{font-weight:900;text-transform:uppercase;letter-spacing:-.03em;font-size:clamp(46px,9.5vw,128px);line-height:.86}
   h1 .row{display:block;overflow:hidden}
   h1 .row i{display:inline-block;font-style:normal;transform:translateY(110%);animation:up 1s cubic-bezier(.16,1,.3,1) forwards}
   h1 .row:nth-child(2) i{animation-delay:.1s}
   h1 .pink{color:var(--pink)}
-
   .sub{max-width:540px;color:#b7b3a9;font-size:clamp(16px,2vw,19px);line-height:1.6;margin:30px auto 0;opacity:0;animation:fade .7s .5s forwards}
   .powered{font-weight:600;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-top:14px;opacity:0;animation:fade .7s .62s forwards}
   .powered span{color:var(--ink)}
-
   /* next event + countdown */
   .next{margin-top:42px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:30px 50px;
     padding-top:30px;border-top:1px solid var(--line);opacity:0;animation:fade .8s .65s forwards}
@@ -60,34 +52,28 @@
   .next .ev .label{margin-bottom:10px}
   .next .ev h2{font-weight:900;text-transform:uppercase;letter-spacing:-.01em;font-size:clamp(24px,4vw,40px);line-height:.95}
   .next .ev p{color:var(--muted);font-size:13px;margin-top:10px;letter-spacing:.02em}
-
   .count{display:flex;gap:10px}
   .count .u{text-align:center}
   .count .u b{font-weight:900;font-size:clamp(30px,5vw,52px);display:block;line-height:1;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
   .count .u .sep{color:var(--pink)}
   .count .u span{font-weight:600;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-top:8px;display:block}
-
   .ctas{display:flex;gap:13px;flex-wrap:wrap;justify-content:center;margin-top:40px;opacity:0;animation:fade .8s .8s forwards}
   .btn{font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase;padding:15px 30px;border-radius:100px;transition:.25s;cursor:pointer;border:1px solid transparent;display:inline-block}
   .btn-pink{background:var(--pink);color:#fff}
   .btn-pink:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(138,15,42,.35)}
   .btn-out{background:transparent;color:var(--ink);border-color:var(--ink)}
   .btn-out:hover{background:var(--ink);color:#fff}
-
   /* bottom bar */
   .bot{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;
     padding-top:22px;border-top:1px solid var(--line)}
   .bot span{font-weight:500;font-size:12px;letter-spacing:.04em;color:var(--muted)}
-
   /* intro splash */
   .intro{position:fixed;inset:0;z-index:999;background:var(--bg);display:flex;align-items:center;justify-content:center;transition:opacity .7s ease}
   .intro .wordmark{font-size:clamp(38px,8vw,82px);opacity:0;transform:scale(.96);animation:introIn .9s .15s cubic-bezier(.16,1,.3,1) forwards}
   .intro.hide{opacity:0;pointer-events:none}
   @keyframes introIn{to{opacity:1;transform:scale(1)}}
-
   @keyframes up{to{transform:translateY(0)}}
   @keyframes fade{to{opacity:1}}
-
   @media(max-width:560px){
     .top .links{display:none}
     .count{gap:6px}
@@ -102,9 +88,7 @@
   <div class="intro" id="intro">
     <span class="wordmark">NEXTGEN<sup>CO.</sup></span>
   </div>
-
   <main class="hero">
-
     <!-- top -->
     <div class="top">
       <a href="#" class="wordmark">NEXTGEN<sup>CO.</sup></a>
@@ -113,22 +97,18 @@
         <a href="mailto:connect@viralx.co.nz">Contact</a>
       </div>
     </div>
-
     <!-- center -->
     <div class="center">
       <div class="eyebrow">
         <span class="dot"></span>
         <span class="label muted">NEXTGEN COLLECTIVE™ · Auckland, NZ</span>
       </div>
-
       <h1>
         <span class="row"><i>Creating what's <span class="pink">next</span>,</i></span>
         <span class="row"><i><span class="pink">after dark.</span></i></span>
       </h1>
-
       <p class="sub">Curating Auckland's next generation of culture</p>
       <p class="powered">Powered by <span>Hustle Network</span></p>
-
       <!-- next event + countdown -->
       <div class="next">
         <div class="ev">
@@ -143,26 +123,21 @@
           <div class="u"><b id="ss">00</b><span>Sec</span></div>
         </div>
       </div>
-
       <div class="ctas">
-        <a href="https://events.humanitix.com/" target="_blank" rel="noopener" class="btn btn-pink">Get Tickets</a>
+        <a href="https://events.humanitix.com/loveisdead" target="_blank" rel="noopener" class="btn btn-pink">Get Tickets</a>
       </div>
     </div>
-
     <!-- bottom -->
     <div class="bot">
       <span>© 2026 NEXTGEN COLLECTIVE™</span>
       <span>wearenextgen.co</span>
     </div>
-
   </main>
-
 <script>
   // intro splash: hold logo ~2s, then reveal site
   const intro = document.getElementById('intro');
   setTimeout(() => intro.classList.add('hide'), 2000);
   setTimeout(() => { intro.style.display = 'none'; }, 2800);
-
   // ===== COUNTDOWN: edit this date for your next event =====
   const target = new Date('2026-06-26T23:00:00+12:00').getTime();
   const p = n => String(Math.max(0, n)).padStart(2, '0');
